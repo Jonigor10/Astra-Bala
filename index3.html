@@ -1,0 +1,67 @@
+<!-- pagina3.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terceira Página</title>
+</head>
+ <title>Galeria de Vídeos e Imagens</title>
+    <style>
+        /* Estilos básicos para centralizar o conteúdo */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+        video, img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <h1>Galeria de Vídeos e Imagens</h1>
+    
+    <div class="gallery">
+        <!-- Exemplo de vídeo de mais de 1 minuto -->
+        <video controls>
+            <source src="videos/meu_video.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+
+        <!-- Exemplo de imagem -->
+        <img src="imagens/minha_imagem.jpg" alt="Descrição da imagem">
+
+        <!-- Adicione mais vídeos e imagens conforme necessário -->
+        <video controls>
+            <source src="videos/outro_video.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+        <img src="imagens/outra_imagem.jpg" alt="Outra imagem">
+    </div>
+
+    <p><a href="index.html">Voltar para a Página Inicial</a></p>
+</body>
+</html>
+<body>
+    <h1>Bem-vindo à Terceira Página!</h1>
+    <p>clube do Astra.</p>
+    <a href="index.html">Voltar para a Página Inicial</a>
+    <a href="index2.html">Ir para a Segunda Página</a>
+</body>
+</html>
